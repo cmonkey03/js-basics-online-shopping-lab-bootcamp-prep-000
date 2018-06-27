@@ -44,12 +44,14 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  var cartLength = cart.length
   for (var i = 0; i < cart.length; i++) {
     if (item === cart[i].itemName) {
       cart.splice(i, 1)
       return cart
     }
   }
+  if cart
 }
 
 function placeOrder(cardNumber) {
